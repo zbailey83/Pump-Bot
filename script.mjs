@@ -38,10 +38,10 @@ const connection = new Connection(clusterApiUrl('mainnet-beta'));
 // Adjustable variables
 const MINIMUM_BUY_AMOUNT = parseFloat(process.env.MINIMUM_BUY_AMOUNT || 0.015);
 const MAX_BONDING_CURVE_PROGRESS = parseInt(process.env.MAX_BONDING_CURVE_PROGRESS || 10);
-const SELL_BONDING_CURVE_PROGRESS = parseInt(process.env.SELL_BONDING_CURVE_PROGRESS || 15);
-const PROFIT_TARGET_1 = 1.25; // 25% increase
-const PROFIT_TARGET_2 = 1.25; // Another 25% increase
-const STOP_LOSS_LIMIT = 0.90; // 10% decrease
+const SELL_BONDING_CURVE_PROGRESS = parseInt(process.env.SELL_BONDING_CURVE_PROGRESS || 16);
+const PROFIT_TARGET_1 = 1.3; // 35% increase
+const PROFIT_TARGET_2 = 1.3; // Another 35% increase
+const STOP_LOSS_LIMIT = 0.77; // 23% decrease
 const MONITOR_INTERVAL = 5 * 1000; // 5 seconds
 const SELL_TIMEOUT = 2 * 60 * 1000; // 2 minutes
 const TRADE_DELAY = 90 * 1000; // 90 seconds delay
